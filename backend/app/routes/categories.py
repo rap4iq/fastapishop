@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, status
 from sqlalchemy.orm import Session
 from typing import List
-from app.database.session import get_db
+from ..database import get_db
 from app.services.category_service import CategoryService
 from app.schemas.category import CategoryResponse, CategoryCreate
 
